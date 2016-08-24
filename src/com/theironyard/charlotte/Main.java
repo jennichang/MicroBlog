@@ -90,6 +90,44 @@ public class Main {
         );
 
         Spark.post(
+                "/delete-message",
+                ((request, response) -> {
+                    Session session = request.session();
+                    String name = session.attribute("username");
+                    User user = usersMap.get(name);
+
+                    int messageDelete = Integer.valueOf(request.queryParams("messageDelete"));
+
+                    user.messagesList.remove(messageDelete - 1);
+
+                    response.redirect("/");
+                    return "";
+                })
+        );
+
+
+        Spark.post(
+                "/edit-message",
+                ((request, response) -> {
+                    Session session = request.session();
+                    String name = session.attribute("username");
+                    User user = usersMap.get(name);
+
+                    int messageDelete = Integer.valueOf(request.queryParams("messageEditNumber"));
+                    String subjectEdit = request.queryParams("subjectEdit");
+                    String dateEdit = request.queryParams("dateEdit");
+                    String messageEdit = request.queryParams("messageEdit");
+
+                    Message newMessage = new Message(subjectEdit, dateEdit, messageEdit);
+
+                    user.messagesList.set(messageDelete - 1, newMessage);
+
+                    response.redirect("/");
+                    return "";
+                })
+        );
+
+        Spark.post(
                 "/logout",
                 ((request, response) -> {
                     Session session = request.session();

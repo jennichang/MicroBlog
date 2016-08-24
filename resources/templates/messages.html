@@ -5,6 +5,19 @@
     <button type="submit">Logout</button>
 </form>
 
+<form action="/delete-message" method="post">
+    <input type="number" placeholder="Message # to delete" name="messageDelete"/>
+    <button type="submit">Delete</button>
+</form>
+
+<form action="/edit-message" method="post">
+    <input type="number" placeholder="Message # to edit" name="messageEditNumber"/>
+    <input type="text" placeholder="Subject Edit" name="subjectEdit"/>
+    <input type="text" placeholder="Date Edit" name="dateEdit"/>
+    <input type="text" placeholder="Message Edit" name="messageEdit"/>
+    <button type="submit">Edit</button>
+</form>
+
 <form action="/create-message" method="post">
     <input type="text" placeholder="Subject" name="messageSubject" width="200"/>
     <input type="text" placeholder="Date" name="messageDate" width="200"/>
