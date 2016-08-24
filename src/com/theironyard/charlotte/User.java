@@ -7,19 +7,19 @@ import java.util.ArrayList;
  */
 public class User {
     String name;
-    private String password;
+    //private String password;
     ArrayList<Message> messagesList = new ArrayList<>();
 
-    public User(String name, String password) {
+    public User(String name) {
         this.name = name;
-        this.password = password;
+        //this.password = password;
     }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
+//
+//    public String getPassword() {
+//        return password;
+//    }
+//
+//    public void setPassword(String password) {
+//        this.password = password;
+//    }
 }
