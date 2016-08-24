@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21422121-444e-4bc7-98cd-91c48256a8d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/login.html" afterPath="$PROJECT_DIR$/resources/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/messages.html" afterPath="$PROJECT_DIR$/resources/templates/messages.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/theironyard/charlotte/Main.java" afterPath="$PROJECT_DIR$/src/com/theironyard/charlotte/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/theironyard/charlotte/User.java" afterPath="$PROJECT_DIR$/src/com/theironyard/charlotte/User.java" />
     </list>
@@ -28,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/theironyard/charlotte/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="193">
+              <caret line="61" column="47" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,12 +37,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/theironyard/charlotte/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,8 +67,8 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -104,10 +106,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/theironyard/charlotte/Message.java" />
-        <option value="$PROJECT_DIR$/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/src/com/theironyard/charlotte/Main.java" />
         <option value="$PROJECT_DIR$/resources/templates/messages.html" />
         <option value="$PROJECT_DIR$/src/com/theironyard/charlotte/User.java" />
+        <option value="$PROJECT_DIR$/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/com/theironyard/charlotte/Main.java" />
       </list>
     </option>
   </component>
@@ -531,7 +533,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -540,14 +542,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/theironyard/charlotte/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -566,21 +560,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/theironyard/charlotte/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/theironyard/charlotte/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/theironyard/charlotte/User.java">
+    <entry file="file://$PROJECT_DIR$/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="75">
+          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/theironyard/charlotte/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="61" column="47" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

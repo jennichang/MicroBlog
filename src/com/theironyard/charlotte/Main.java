@@ -14,7 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //usersMap.put("Jennifer", new User("Jennifer", "abc"));
+        usersMap.put("Jennifer", new User("Jennifer", "abc"));
 
         Spark.get(
                 "/",
@@ -39,17 +39,30 @@ public class Main {
                 "/login",
                 ((request, response) -> {
                     String name = request.queryParams("loginName");
+                    String password = request.queryParams("password");
                     User userObj = usersMap.get(name);
-                    if (userObj == null) {
-                        userObj = new User(name);
+                    if ((userObj != null) && (usersMap.get(name).getPassword().equals(password))) {
+                        Session session = request.session();
+                        session.attribute("username", name);
+
+                        response.redirect("/");
+                        return "";
+                    } else if ((userObj != null) && (usersMap.get(name).getPassword() != password)) {
+                        userObj = null;
+                        Session session = request.session();
+                        session.invalidate();
+                        response.redirect("/");
+                        return "";
+                    } else {
+                        userObj = new User(name, password);
                         usersMap.put(name, userObj);
+                        Session session = request.session();
+                        session.attribute("username", name);
+
+                        response.redirect("/");
+                        return "";
                     }
 
-                    Session session = request.session();
-                    session.attribute("username", name);
-
-                    response.redirect("/");
-                    return "";
                 })
         );
 
