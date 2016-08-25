@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html>
+<html>
+<head>
+    <style>
+body {
+    background-color: AliceBlue;
+}
+</style>
+</head>
 <body>
+<h1 style="color:blue;">Post Your Messages!</h1>
+<p> Add, Edit or Delete Your Messages.</p>
+<br>
 <form action="/logout" method="post">
     <button type="submit">Logout</button>
 </form>
-
+<br>
 <form action="/delete-message" method="post">
-    <input type="number" placeholder="Message # to delete" name="messageDelete"/>
+    <input type="number" placeholder="Message # to delete" name="messageDelete" width="100"/>
     <button type="submit">Delete</button>
 </form>
-
+<br>
 <form action="/edit-message" method="post">
-    <input type="number" placeholder="Message # to edit" name="messageEditNumber"/>
-    <input type="text" placeholder="Subject Edit" name="subjectEdit"/>
-    <input type="text" placeholder="Date Edit" name="dateEdit"/>
-    <input type="text" placeholder="Message Edit" name="messageEdit"/>
+    <input type="number" placeholder="Message # to edit" name="messageEditNumber" width="400"/>
+    <input type="text" placeholder="Subject Edit" name="subjectEdit" width="400"/>
+    <input type="text" placeholder="Date Edit" name="dateEdit" width="400"/>
+    <input type="text" placeholder="Message Edit" name="messageEdit" width="400"/>
     <button type="submit">Edit</button>
 </form>
-
+<br>
 <form action="/create-message" method="post">
-    <input type="text" placeholder="Subject" name="messageSubject" width="200"/>
-    <input type="text" placeholder="Date" name="messageDate" width="200"/>
-    <input type="text" placeholder="Message" name="messageBody" width="200"/>
+    <input type="text" placeholder="Subject" name="messageSubject" width="400"/>
+    <input type="text" placeholder="Date" name="messageDate" width="400"/>
+    <input type="text" placeholder="Message" name="messageBody" width="400"/>
     <button type="submit">Submit</button>
 </form>
 <ol>
     {{#messagesList}}
-    <li>{{subject}} - {{date}} - {{body}}</li>
+    <li>{{subject}} : {{date}} : {{body}}</li>
     {{/messagesList}}
 </ol>
+
+<br>
+<h2>Worst Woman Ever</h2>
+<img src=http://i.imgur.com/KnaUFmT.gif" alt="worst" style="width:304px;height:228px;">
+
 </body>
 </html>
 
